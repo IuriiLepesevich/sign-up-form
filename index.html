@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <script src="js/script.js" defer></script>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <script src="js/script.js" defer></script>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="left">
+                <div class="hero-heading">
+                    <p>ODIN</p>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Sign Up To Our Service</h1>
+
+                <form>
+                    <fieldset>
+                        <label for="name">First Name
+                            <input type="text" name="name" id="name"></label>
+                        <span class="error"></span>
+                        
+                        <label for="lastname">Last Name
+                            <input type="text" name="lastname" id="lastname"></label>
+                        <span class="error"></span>
+                        
+                        <label for="mail">Email
+                            <input type="email" name="mail" id="mail"></label>
+                        <span class="error"></span>
+                        
+                        <label for="phone">Phone Number
+                            <input type="tel" name="phone" id="phone"></label>
+                        <span class="error"></span>
+                        
+                        <label for="pass">Password
+                            <input type="password" name="pass" id="pass"></label>
+                        <span class="error"></span>
+                        
+                        <label for="cpass">Confirm password
+                            <input type="password" name="cpass" id="cpass"></label>
+                        <span class="error"></span>
+                    </fieldset>
+                    <div class="form-down">
+                        <span>I agree with <a href="">Terms of service</a>
+                            <input type="checkbox" name="terms" id="terms"></span>
+                        <input type="submit" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
