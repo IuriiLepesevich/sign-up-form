@@ -38,7 +38,8 @@ body {
     flex: 1 1 65%;
     background-color: #f1f1f1;
     flex-direction: column;
-    padding: 1em 2em;
+    justify-content: space-around;
+    padding: 1em 0em;
 }
 
 .hero-heading {
@@ -62,11 +63,29 @@ h1 {
     font-size: calc(2rem + 2vw);
 }
 
+form {
+    align-self: stretch;
+}
+
 fieldset {
     background-color: white;
     border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 
 label > input {
     display: block;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.error {
+    font-size: 0.8em;
+    color: red;
 }
