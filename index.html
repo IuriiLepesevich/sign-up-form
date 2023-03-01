@@ -23,34 +23,40 @@
                         <div class="row">
                             <label for="name"><p class="label-text">First Name</p>
                                 <input type="text" name="name" id="name">
-                                <span class="error">*Error</span></label>
+                                <span class="error-text">*Error</span></label>
                             <label for="lastname"><p class="label-text">Last Name</p>
                                 <input type="text" name="lastname" id="lastname">
-                                <span class="error">*Error</span></label>
+                                <span class="error-text">*Error</span></label>
                         </div>
                         
                         <div class="row">
                             <label for="mail"><p class="label-text">Email</p>
                                 <input type="email" name="mail" id="mail">
-                                <span class="error">*Error</span></label>
+                                <span class="error-text">*Error</span></label>
                             <label for="phone"><p class="label-text">Phone Number</p>
                                 <input type="tel" name="phone" id="phone">
-                                <span class="error">*Error</span></label>
+                                <span class="error-text">*Error</span></label>
                         </div>
                         
                         <div class="row">
                             <label for="pass"><p class="label-text">Password</p>
                                 <input type="password" name="pass" id="pass">
-                                <span class="error">*Error</span></label>
+                                <span class="error-text">*Error</span></label>
                             <label for="cpass"><p class="label-text">Confirm password</p>
                                 <input type="password" name="cpass" id="cpass">
-                                <span class="error">*Error</span></label>
+                                <span class="error-text">*Error</span></label>
                         </div>
                     </fieldset>
                     <div class="form-down">
-                        <span>I agree with <a href="">Terms of service</a>
+                        <div class="terms-holder">
                             <input type="checkbox" name="terms" id="terms">
-                        </span>
+                            <span class="terms-text">
+                                I agree with
+                                <p class="terms-par">
+                                    <a href="">Terms of service</a>
+                                </p>
+                            </span>
+                        </div>
                         <input type="submit" value="Sign Up">
                     </div>
                 </form>
