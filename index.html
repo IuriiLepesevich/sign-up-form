@@ -18,38 +18,44 @@
             <div class="right">
                 <h1>Sign Up To Our Service</h1>
 
-                <form>
+                <form novalidate>
                     <fieldset>
                         <div class="row">
                             <label for="name"><p class="label-text">First Name</p>
-                                <input type="text" name="name" id="name">
-                                <span class="error-text">*Error</span></label>
+                                <input type="text" name="name" id="name" required>
+                                <span class="error-text"></span>
+                            </label>
                             <label for="lastname"><p class="label-text">Last Name</p>
-                                <input type="text" name="lastname" id="lastname">
-                                <span class="error-text">*Error</span></label>
+                                <input type="text" name="lastname" id="lastname" required>
+                                <span class="error-text"></span>
+                            </label>
                         </div>
                         
                         <div class="row">
                             <label for="mail"><p class="label-text">Email</p>
-                                <input type="email" name="mail" id="mail">
-                                <span class="error-text">*Error</span></label>
+                                <input type="email" name="mail" id="mail" required>
+                                <span class="error-text"></span>
+                            </label>
                             <label for="phone"><p class="label-text">Phone Number</p>
-                                <input type="tel" name="phone" id="phone">
-                                <span class="error-text">*Error</span></label>
+                                <input type="tel" name="phone" id="phone" required>
+                                <span class="error-text"></span>
+                            </label>
                         </div>
                         
                         <div class="row">
                             <label for="pass"><p class="label-text">Password</p>
-                                <input type="password" name="pass" id="pass">
-                                <span class="error-text">*Error</span></label>
+                                <input type="password" name="pass" id="pass" required>
+                                <span class="error-text"></span>
+                            </label>
                             <label for="cpass"><p class="label-text">Confirm password</p>
-                                <input type="password" name="cpass" id="cpass">
-                                <span class="error-text">*Error</span></label>
+                                <input type="password" name="pass" id="cpass" required>
+                                <span class="error-text"></span>
+                            </label>
                         </div>
                     </fieldset>
                     <div class="form-down">
                         <div class="terms-holder">
-                            <input type="checkbox" name="terms" id="terms">
+                            <input type="checkbox" name="terms" id="terms" required>
                             <span class="terms-text">
                                 I agree with
                                 <p class="terms-par">

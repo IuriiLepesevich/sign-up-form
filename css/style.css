@@ -197,6 +197,24 @@ input[type='submit']:hover {
     margin: 0px;
 }
 
+:is(input[type='text'],
+input[type='tel'],
+input[type='password']) + span.error-message::before {
+    content: 'Input required';
+}
+
+input[type='email'] + span.error-message::before {
+    content: 'Invalid email';
+}
+
+input[type='password'] + span.pass-error-message::before {
+    content: 'Passwords don\'t match';
+}
+
+input[type='checkbox'].error-message {
+    border: 2px solid red;
+}
+
 @media only screen and (max-width: 850px) {
     .main {
         flex: 0 1 100%;
