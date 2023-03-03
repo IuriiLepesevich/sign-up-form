@@ -17,15 +17,13 @@ function validateForm(e) {
 function checkElem(e) {
     const elem = (e instanceof HTMLElement) ? e : e.target;
     if (!elem.checkValidity()) {
-        if(elem.type == 'checkbox') {
-            elem.classList.add('error-message');
-        } else {
+        elem.classList.add('border-error');
+        if(!elem.type == 'checkbox') {
             elem.nextElementSibling.classList.add('error-message');
         }
     } else {
-        if(elem.type == 'checkbox') {
-            elem.classList.remove('error-message');
-        } else {
+        elem.classList.remove('border-error');
+        if(!elem.type == 'checkbox') {
             elem.nextElementSibling.classList.remove('error-message');
         }
     }
@@ -35,9 +33,13 @@ function checkElem(e) {
         const pass2 = document.getElementById(selector);
         
         if(elem.value !== pass2.value) {
+            elem.classList.add('border-error');
+            pass2.classList.add('border-error');
             elem.nextElementSibling.classList.add('pass-error-message');
             pass2.nextElementSibling.classList.add('pass-error-message');
         } else {
+            elem.classList.remove('border-error');
+            pass2.classList.remove('border-error');
             elem.nextElementSibling.classList.remove('pass-error-message');
             pass2.nextElementSibling.classList.remove('pass-error-message');
         }

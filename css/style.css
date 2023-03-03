@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: odin-spear;
-    src: url(../font/odins\ spear.TTF);
+    font-family: norse-bold;
+    src: url(../font/Norse-Bold.otf);
 }
 
 :root {
@@ -15,7 +15,7 @@
     --label-text-color: #7c7c7c;
 }
 
-* {
+*, :after, :before {
     box-sizing: border-box;
 }
 
@@ -68,7 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: calc(5rem + 4vw);
-    font-family: odin-spear;
+    font-family: norse-bold;
 }
 
 h1 {
@@ -144,13 +144,8 @@ input[type='password'] {
 input[type='email'],
 input[type='tel'],
 input[type='password']):focus {
-    border: 3px solid #4285F4;
+    border: 2px solid #4285F4;
     outline: none;
-}
-
-.error-field {
-    outline: none;
-    border: 2px solid red !important;
 }
 
 .form-down {
@@ -213,6 +208,10 @@ input[type='submit']:hover {
     margin: 0px;
 }
 
+.border-error {
+    border: 2px solid red !important;
+}
+
 :is(input[type='text'],
 input[type='tel'],
 input[type='password']) + span.error-message::before {
@@ -225,10 +224,6 @@ input[type='email'] + span.error-message::before {
 
 input[type='password'] + span.pass-error-message::before {
     content: 'Passwords don\'t match';
-}
-
-input[type='checkbox'].error-message {
-    border: 2px solid red;
 }
 
 @media only screen and (max-width: 850px) {
